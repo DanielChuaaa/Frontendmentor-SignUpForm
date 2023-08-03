@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+    <style>
+      .err {
+        background: #ffe6ee;
+        border: 1px solid #b1395f;
+      }
+      .emsg {
+        position: absolute;
+        color: #c12020;
+        font-weight: bold;
+        font-size: 0.8rem;
+        left: 15.8rem;
+      }
+      ::placeholder {
+        color: #c12020;
+      }
+      @media (max-width: 375px) {
+        .emsg {
+          left: 11.8rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="card-container">
+        <div class="card">
+          <div class="container">
+            <h1>Stay updated!</h1>
+            <p>Join 60,000+ product managers receiving monthly updates on:</p>
+
+            <div class="checklist">
+              <p class="check">
+                <img src="assets/images/icon-list.svg" class="img-checklist" />
+                Product discovery and building what mattters
+              </p>
+              <p class="check">
+                <img src="assets/images/icon-list.svg" class="img-checklist" />
+                Measuring to ensure updates are a succes
+              </p>
+              <p class="check">
+                <img src="assets/images/icon-list.svg" class="img-checklist" />
+                And much more!
+              </p>
+            </div>
+
+            <form
+              action="dekstopsucces.html"
+              onsubmit="return errorHandlers()"
+              class="form"
+              novalidate
+            >
+              <div id="cemail" class="emsg"></div>
+              <p>Email adress</p>
+              <input
+                class="input is-normal"
+                type="email"
+                placeholder="email@company.com"
+                name="email"
+                id="email"
+                required
+              />
+
+              <button class="button">
+                <p>Subscribe to monthly newsletter</p>
+              </button>
+            </form>
+          </div>
+          <div class="imagee"></div>
+        </div>
+      </div>
+    </header>
+  </body>
+  <script src="errorhandlers.js"></script>
+</html>
